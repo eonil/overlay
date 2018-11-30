@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45EBC8AD21B03AE100105925 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8AC21B03AE100105925 /* AnimationController.swift */; };
+		45EBC8AF21B03B0300105925 /* OBJCProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8AE21B03B0300105925 /* OBJCProxy.swift */; };
+		45EBC8B321B03D6200105925 /* ViewPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8B221B03D6200105925 /* ViewPair.swift */; };
+		45EBC8B521B03D8000105925 /* OverlayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8B421B03D8000105925 /* OverlayState.swift */; };
+		45EBC8C021B04BA400105925 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8BF21B04BA400105925 /* Overlay.swift */; };
+		45EBC8C621B0502D00105925 /* ContentConstraintPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8B021B03C9000105925 /* ContentConstraintPalette.swift */; };
+		45EBC8C821B059D500105925 /* OnewayTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8C721B059D500105925 /* OnewayTransitionController.swift */; };
+		45EBC8CA21B059DF00105925 /* CrossTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8C921B059DF00105925 /* CrossTransitionController.swift */; };
+		45EBC8CC21B059E700105925 /* RunningContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8CB21B059E700105925 /* RunningContext.swift */; };
+		45EBC8D821B08D2400105925 /* CrossTransitionController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8D721B08D2400105925 /* CrossTransitionController2.swift */; };
+		45EBC8DA21B093DD00105925 /* FillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8D921B093DD00105925 /* FillViewController.swift */; };
+		45EBC8DF21B0ECA700105925 /* OverlayConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8DE21B0ECA700105925 /* OverlayConfig.swift */; };
+		45EBC8E121B0ECE000105925 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8E021B0ECE000105925 /* Protocols.swift */; };
+		45EBC8EB21B0F62700105925 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8EA21B0F62700105925 /* Debug.swift */; };
+		45EBC8ED21B0FB2400105925 /* BackgroundFillingLayoutContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8EC21B0FB2400105925 /* BackgroundFillingLayoutContext.swift */; };
+		45EBC8EF21B1072100105925 /* OverlayNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8EE21B1072100105925 /* OverlayNote.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		45EBC80D21B029B500105925 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4587424521B11AB100286894 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		45EBC80F21B029B500105925 /* libOverlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOverlay.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EBC81921B029C100105925 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		45EBC8AC21B03AE100105925 /* AnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
+		45EBC8AE21B03B0300105925 /* OBJCProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBJCProxy.swift; sourceTree = "<group>"; };
+		45EBC8B021B03C9000105925 /* ContentConstraintPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentConstraintPalette.swift; sourceTree = "<group>"; };
+		45EBC8B221B03D6200105925 /* ViewPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPair.swift; sourceTree = "<group>"; };
+		45EBC8B421B03D8000105925 /* OverlayState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayState.swift; sourceTree = "<group>"; };
+		45EBC8BF21B04BA400105925 /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
+		45EBC8C721B059D500105925 /* OnewayTransitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnewayTransitionController.swift; sourceTree = "<group>"; };
+		45EBC8C921B059DF00105925 /* CrossTransitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossTransitionController.swift; sourceTree = "<group>"; };
+		45EBC8CB21B059E700105925 /* RunningContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningContext.swift; sourceTree = "<group>"; };
+		45EBC8D721B08D2400105925 /* CrossTransitionController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossTransitionController2.swift; sourceTree = "<group>"; };
+		45EBC8D921B093DD00105925 /* FillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillViewController.swift; sourceTree = "<group>"; };
+		45EBC8DE21B0ECA700105925 /* OverlayConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayConfig.swift; sourceTree = "<group>"; };
+		45EBC8E021B0ECE000105925 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		45EBC8EA21B0F62700105925 /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
+		45EBC8EC21B0FB2400105925 /* BackgroundFillingLayoutContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundFillingLayoutContext.swift; sourceTree = "<group>"; };
+		45EBC8EE21B1072100105925 /* OverlayNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayNote.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45EBC80C21B029B500105925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45EBC80621B029B500105925 = {
+			isa = PBXGroup;
+			children = (
+				45EBC81921B029C100105925 /* README.md */,
+				4587424521B11AB100286894 /* LICENSE.md */,
+				45EBC81121B029B500105925 /* Overlay */,
+				45EBC81021B029B500105925 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45EBC81021B029B500105925 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45EBC80F21B029B500105925 /* libOverlay.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45EBC81121B029B500105925 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				45EBC8BF21B04BA400105925 /* Overlay.swift */,
+				45EBC8DE21B0ECA700105925 /* OverlayConfig.swift */,
+				45EBC8B421B03D8000105925 /* OverlayState.swift */,
+				45EBC8EE21B1072100105925 /* OverlayNote.swift */,
+				45EBC8E021B0ECE000105925 /* Protocols.swift */,
+				45EBC8C721B059D500105925 /* OnewayTransitionController.swift */,
+				45EBC8C921B059DF00105925 /* CrossTransitionController.swift */,
+				45EBC8D721B08D2400105925 /* CrossTransitionController2.swift */,
+				45EBC8CB21B059E700105925 /* RunningContext.swift */,
+				45EBC8D921B093DD00105925 /* FillViewController.swift */,
+				45EBC8EC21B0FB2400105925 /* BackgroundFillingLayoutContext.swift */,
+				45EBC8B021B03C9000105925 /* ContentConstraintPalette.swift */,
+				45EBC8B221B03D6200105925 /* ViewPair.swift */,
+				45EBC8AC21B03AE100105925 /* AnimationController.swift */,
+				45EBC8AE21B03B0300105925 /* OBJCProxy.swift */,
+				45EBC8EA21B0F62700105925 /* Debug.swift */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45EBC80E21B029B500105925 /* Overlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45EBC81621B029B500105925 /* Build configuration list for PBXNativeTarget "Overlay" */;
+			buildPhases = (
+				45EBC80B21B029B500105925 /* Sources */,
+				45EBC80C21B029B500105925 /* Frameworks */,
+				45EBC80D21B029B500105925 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Overlay;
+			productName = Overlay;
+			productReference = 45EBC80F21B029B500105925 /* libOverlay.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45EBC80721B029B500105925 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Henry;
+				TargetAttributes = {
+					45EBC80E21B029B500105925 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 45EBC80A21B029B500105925 /* Build configuration list for PBXProject "Overlay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 45EBC80621B029B500105925;
+			productRefGroup = 45EBC81021B029B500105925 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45EBC80E21B029B500105925 /* Overlay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45EBC80B21B029B500105925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EBC8CA21B059DF00105925 /* CrossTransitionController.swift in Sources */,
+				45EBC8CC21B059E700105925 /* RunningContext.swift in Sources */,
+				45EBC8ED21B0FB2400105925 /* BackgroundFillingLayoutContext.swift in Sources */,
+				45EBC8DA21B093DD00105925 /* FillViewController.swift in Sources */,
+				45EBC8EF21B1072100105925 /* OverlayNote.swift in Sources */,
+				45EBC8B321B03D6200105925 /* ViewPair.swift in Sources */,
+				45EBC8C821B059D500105925 /* OnewayTransitionController.swift in Sources */,
+				45EBC8EB21B0F62700105925 /* Debug.swift in Sources */,
+				45EBC8B521B03D8000105925 /* OverlayState.swift in Sources */,
+				45EBC8DF21B0ECA700105925 /* OverlayConfig.swift in Sources */,
+				45EBC8D821B08D2400105925 /* CrossTransitionController2.swift in Sources */,
+				45EBC8AF21B03B0300105925 /* OBJCProxy.swift in Sources */,
+				45EBC8E121B0ECE000105925 /* Protocols.swift in Sources */,
+				45EBC8C021B04BA400105925 /* Overlay.swift in Sources */,
+				45EBC8C621B0502D00105925 /* ContentConstraintPalette.swift in Sources */,
+				45EBC8AD21B03AE100105925 /* AnimationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		45EBC81421B029B500105925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45EBC81521B029B500105925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45EBC81721B029B500105925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45EBC81821B029B500105925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45EBC80A21B029B500105925 /* Build configuration list for PBXProject "Overlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45EBC81421B029B500105925 /* Debug */,
+				45EBC81521B029B500105925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45EBC81621B029B500105925 /* Build configuration list for PBXNativeTarget "Overlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45EBC81721B029B500105925 /* Debug */,
+				45EBC81821B029B500105925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45EBC80721B029B500105925 /* Project object */;
+}
