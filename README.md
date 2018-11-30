@@ -2,6 +2,7 @@
 
 Overlay content view presentation/dismission management controller.
 
+[![Example](http://img.youtube.com/vi/P0Ip-lpKDms/0.jpg)](http://www.youtube.com/watch?v=P0Ip-lpKDms "OverlayExample")
 
 What is This?
 ----------------
