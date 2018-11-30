@@ -4,6 +4,19 @@ Overlay content view presentation/dismission management controller.
 
 [![Example](http://img.youtube.com/vi/P0Ip-lpKDms/0.jpg)](http://www.youtube.com/watch?v=P0Ip-lpKDms "OverlayExample")
 
+```Swift
+
+    private let overlay = Overlay()
+
+    func presentContent1() {
+        var s = OverlayState()
+        s.container = containerView
+        s.content = contentView1
+        overlay.control(.render(s))
+    }
+```
+    
+
 What is This?
 ----------------
 This does only one thing. Manages presentation and dismission of *overlay* information view.
