@@ -15,7 +15,8 @@ Overlay content view presentation/dismission management controller.
         overlay.control(.render(s))
     }
 ```
-    
+
+
 
 What is This?
 ----------------
@@ -26,8 +27,8 @@ This includes these features.
 - Dismission by swipe down.
 - Dismission by tapping filling background.
 - Dismission by dragging longer.
-- Presented overlay view can be dragged a little bit to provide swipe look and feel.
-- Event emission for each moments of presentation/dismission.
+- Presented overlay view can be dragged a little bit to provide draggable look and feel.
+- (TODO) Event emission for each moment of presentation/dismission.
 
 Nothing more. This library does not provide much configurable options. Instead, this does one thing very well.
 
@@ -43,7 +44,7 @@ silences any errors and just does best efforts.
 
 Caveats
 ----------
-- Cross-transition is not actually color-blended. It's just cross-alpha blending, and may show some graphical
+- Cross-transition is not actually color-blended. It's just cross alpha-blending, and may show some graphical
   glitch. I couldn't find how to perform proper color blending with resizing and moving `UIView`s. 
 
 - Overlay controller retains any view objects as long as it needed. This including presented state and enqueued
@@ -55,7 +56,8 @@ Caveats
 
 - Device rotation is not handled properly. 
 
-- Keyboard kicking in has not been addressed.
+- Keyboard kicking in has not been addressed. This controller does not do anything with keyboard.
+  You can deal with virtual keyboard on your way by resizing or translating container view.
 
 
 
