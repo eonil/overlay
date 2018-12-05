@@ -13,14 +13,16 @@ public struct OverlayState: Equatable {
     public weak var container: UIView?
     public weak var content: UIView? {
         willSet {
-            assert(newValue == nil || newValue!.translatesAutoresizingMaskIntoConstraints == false)
+            Debug.assertAutoLayoutCompatibleView(newValue)
+            Debug.assertNonZeroHeightView(newValue)
         }
     }
 
     public init() {
     }
     public init(container c: UIView, content cc: UIView?) {
-        assert(cc == nil || cc!.translatesAutoresizingMaskIntoConstraints == false)
+        Debug.assertAutoLayoutCompatibleView(cc)
+        Debug.assertNonZeroHeightView(cc)
         container = c
         content = cc
     }

@@ -17,4 +17,14 @@ struct Debug {
             ["Supplied view \(v) `translatesAutoresizingMaskIntoConstraints` is not set to `false`.",
              "This view is not Auto Layout compatible."].joined())
     }
+    static func assertNonZeroHeightView(_ v: @autoclosure() -> UIView?) {
+        guard let v = v() else { return }
+        let sz = v.systemLayoutSizeFitting(
+            CGSize(width: UIScreen.main.bounds.width, height: 0),
+            withHorizontalFittingPriority: .required,
+            verticalFittingPriority: .fittingSizeLevel)
+        assert(
+            sz.height > 0,
+            "Supplied view's compressed height == 0. Please check it again.")
+    }
 }

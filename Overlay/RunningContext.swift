@@ -30,10 +30,14 @@ final class RunningContext {
     func installInteractions() {
         viewPair.content.addGestureRecognizer(panGesture)
         viewPair.container.addGestureRecognizer(tapGesture)
+        viewPair.container.resignFirstResponder()
+        viewPair.content.becomeFirstResponder()
         areInteractionsInstalled = true
     }
     func deinstallInteractions() {
         areInteractionsInstalled = false
+        viewPair.content.resignFirstResponder()
+        viewPair.container.becomeFirstResponder()
         viewPair.content.removeGestureRecognizer(panGesture)
         viewPair.container.removeGestureRecognizer(tapGesture)
     }

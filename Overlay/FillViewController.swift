@@ -59,6 +59,9 @@ final class FillViewController {
 
     func layoutCrossTransition(context: BackgroundFillingLayoutContext) {
         contentBackgroundConstraints.apply(context: context)
+        if let p = contentBackgroundView as? CrossTransitionProtocol {
+            p.layoutCrossTransition()
+        }
     }
     func layoutContentDisplacement(_ d: CGFloat) {
         contentBackgroundConstraints.setContentDisplacement(to: d)

@@ -38,6 +38,10 @@ public extension TransitionProtocol {
     func cleanupDismission() {}
 }
 
+public protocol CrossTransitionProtocol: TransitionProtocol {
+    func layoutCrossTransition()
+}
+
 public protocol InteractionProtocol {
     /// - Parameter ratio:
     ///     Displacement amount in points that dragged by user.

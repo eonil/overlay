@@ -60,6 +60,7 @@ final class OnewayTransitionController {
         fillViewController.preparePresentation()
         viewPair.container.addSubview(viewPair.content)
         contentConstraints.installConstraints(viewPair)
+        (viewPair.content as? TransitionProtocol)?.preparePresentation()
         viewPair.container.layoutIfNeeded()
     }
     private func layoutPresentation() {
@@ -67,15 +68,18 @@ final class OnewayTransitionController {
         let fctx = contentConstraints.fillingContext(displacement: 0)
         fillViewController.layoutPresentation(context: fctx)
         contentConstraints.bottom?.constant = 0
+        (viewPair.content as? TransitionProtocol)?.layoutPresentation()
         viewPair.container.layoutIfNeeded()
     }
     private func cleanupPresentation() {
         fillViewController.cleanupPresentation()
+        (viewPair as? TransitionProtocol)?.cleanupPresentation()
         note?()
     }
 
     private func prepareDismission() {
         fillViewController.prepareDismission()
+        (viewPair.content as? TransitionProtocol)?.prepareDismission()
         viewPair.container.layoutIfNeeded()
     }
     private func layoutDismission() {
@@ -84,10 +88,12 @@ final class OnewayTransitionController {
         contentConstraints.bottom?.constant = displacement
         let fctx = contentConstraints.fillingContext(displacement: displacement)
         fillViewController.layoutDismission(context: fctx)
+        (viewPair.content as? TransitionProtocol)?.layoutDismission()
         viewPair.container.layoutIfNeeded()
     }
     private func cleanupDismission() {
         fillViewController.cleanupDismission()
+        (viewPair.content as? TransitionProtocol)?.cleanupDismission()
         contentConstraints.deinstallConstraints(viewPair)
         viewPair.content.removeFromSuperview()
         note?()
