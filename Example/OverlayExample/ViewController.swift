@@ -15,6 +15,15 @@ class ViewController: UIViewController {
     private let contentView2 = ContentView2()
     private let overlay = Overlay()
     private var config = OverlayConfig()
+    private func processOverlayNote(_ m: OverlayNote) {
+        switch m {
+        case .dismiss:
+            var s = OverlayState()
+            s.container = containerView
+            s.content = nil
+            overlay.control(.render(s))
+        }
+    }
 
     ////
 
@@ -22,7 +31,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //        config.crossTransitionStyle = .none
         config.backgroundFilling = .darkSolidFillingWithDarkBlurContentBackground
+        config.automaticallyDismissByEndUserInteraction = false
         overlay.control(.config(config))
+        overlay.note = { [weak self] m in self?.processOverlayNote(m) }
     }
 
     @IBOutlet weak var containerView: UIView?
