@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45E86E1521B985F500E610D7 /* AutoLayoutUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E86E1421B985F500E610D7 /* AutoLayoutUtil.swift */; };
 		45EBC8AD21B03AE100105925 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8AC21B03AE100105925 /* AnimationController.swift */; };
 		45EBC8AF21B03B0300105925 /* OBJCProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8AE21B03B0300105925 /* OBJCProxy.swift */; };
 		45EBC8B321B03D6200105925 /* ViewPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8B221B03D6200105925 /* ViewPair.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		4587424521B11AB100286894 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		45E86E1421B985F500E610D7 /* AutoLayoutUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutUtil.swift; sourceTree = "<group>"; };
 		45EBC80F21B029B500105925 /* libOverlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOverlay.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EBC81921B029C100105925 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		45EBC8AC21B03AE100105925 /* AnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				45EBC8AC21B03AE100105925 /* AnimationController.swift */,
 				45EBC8AE21B03B0300105925 /* OBJCProxy.swift */,
 				45EBC8EA21B0F62700105925 /* Debug.swift */,
+				45E86E1421B985F500E610D7 /* AutoLayoutUtil.swift */,
 			);
 			path = Overlay;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				45EBC8CA21B059DF00105925 /* CrossTransitionController.swift in Sources */,
 				45EBC8CC21B059E700105925 /* RunningContext.swift in Sources */,
+				45E86E1521B985F500E610D7 /* AutoLayoutUtil.swift in Sources */,
 				45EBC8ED21B0FB2400105925 /* BackgroundFillingLayoutContext.swift in Sources */,
 				45EBC8DA21B093DD00105925 /* FillViewController.swift in Sources */,
 				45EBC8EF21B1072100105925 /* OverlayNote.swift in Sources */,

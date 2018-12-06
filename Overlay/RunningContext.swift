@@ -18,18 +18,19 @@ final class RunningContext {
         viewPair = vp
         contentConstraints = ccs
 
+        tapWaitingView.translatesAutoresizingMaskIntoConstraints = false
+        tapWaitingView.note = { [weak self] in self?.note?(.dismiss) }
+
         panGesture.addTarget(panProxy, action: #selector(OBJCProxy.handle))
         panProxy.note = { [weak self] in self?.processPan() }
-
-        tapGesture.addTarget(tapProxy, action: #selector(OBJCProxy.handle))
-        tapProxy.note = { [weak self] in self?.processTap() }
     }
     func getViewPair() -> ViewPair {
         return viewPair
     }
     func installInteractions() {
+        viewPair.container.insertSubview(tapWaitingView, belowSubview: viewPair.content)
+        tapWaitingView.constrainToFillContainer()
         viewPair.content.addGestureRecognizer(panGesture)
-        viewPair.container.addGestureRecognizer(tapGesture)
         viewPair.container.resignFirstResponder()
         viewPair.content.becomeFirstResponder()
         areInteractionsInstalled = true
@@ -39,7 +40,8 @@ final class RunningContext {
         viewPair.content.resignFirstResponder()
         viewPair.container.becomeFirstResponder()
         viewPair.content.removeGestureRecognizer(panGesture)
-        viewPair.container.removeGestureRecognizer(tapGesture)
+        NSLayoutConstraint.deactivate(tapWaitingView.constraints)
+        tapWaitingView.removeFromSuperview()
     }
 
     func isCrossTransition(to newState: OverlayState) -> Bool {
@@ -86,12 +88,11 @@ final class RunningContext {
     private let animc = AnimationController()
     private let fillViewController: FillViewController
     private let viewPair: ViewPair
+    private let tapWaitingView = TapWaitingView()
     private var contentConstraints: ContentConstraintPalette
 
     private let panGesture = UIPanGestureRecognizer()
     private let panProxy = OBJCProxy()
-    private let tapGesture = UITapGestureRecognizer()
-    private let tapProxy = OBJCProxy()
     private var areInteractionsInstalled = false
 
     private func processPan() {
@@ -129,14 +130,6 @@ final class RunningContext {
             break
         }
     }
-    private func processTap() {
-        switch tapGesture.state {
-        case .ended:
-            note?(.dismiss)
-        default:
-            break
-        }
-    }
     private func layoutContentDisplacement(to d: CGFloat) {
         contentConstraints.setContentDisplacement(to: d)
         fillViewController.layoutContentDisplacement(d)
@@ -151,3 +144,24 @@ private func dim(limit c: CGFloat) -> (_: CGFloat) -> CGFloat {
     }
 }
 
+private final class TapWaitingView: UIView {
+    var note: (() -> Void)?
+    private let tap = UITapGestureRecognizer()
+    private func install() {
+        addGestureRecognizer(tap)
+        tap.addTarget(self, action: #selector(processUserTap))
+    }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        install()
+    }
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        install()
+    }
+    @objc
+    func processUserTap(_ sender: UITapGestureRecognizer) {
+        note?()
+    }
+}
