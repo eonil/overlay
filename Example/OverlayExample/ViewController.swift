@@ -11,10 +11,12 @@ import Overlay
 
 class ViewController: UIViewController {
 
+    private let kbdw = KeyboardWatch()
     private let contentView1 = ContentView1()
     private let contentView2 = ContentView2()
     private let overlay = Overlay()
     private var config = OverlayConfig()
+
     private func processOverlayNote(_ m: OverlayNote) {
         switch m {
         case .dismiss:
@@ -23,6 +25,14 @@ class ViewController: UIViewController {
             s.content = nil
             overlay.control(.render(s))
         }
+    }
+    private func processKeyboardNote(_ m: CGRect) {
+        guard let f = view.window?.convert(m, from: nil) else { return }
+        let f1 = view.convert(f, from: nil)
+        let c = view.bounds.maxY - f1.minY
+        containerViewBottomConstraint?.constant = c + 10
+        view.layoutIfNeeded()
+
     }
 
     ////
@@ -34,9 +44,11 @@ class ViewController: UIViewController {
         config.automaticallyDismissByEndUserInteraction = false
         overlay.control(.config(config))
         overlay.note = { [weak self] m in self?.processOverlayNote(m) }
+        kbdw.note = { [weak self] m in self?.processKeyboardNote(m) }
     }
 
     @IBOutlet weak var containerView: UIView?
+    @IBOutlet weak var containerViewBottomConstraint: NSLayoutConstraint?
 
     @IBAction
     func userTapPresent1Button(_ sender: UIButton) {
@@ -65,5 +77,10 @@ class ViewController: UIViewController {
         config.onewayTransitionDuration = slow ? 4 : 0.4
         config.crossTransitionDuration = slow ? 4 : 0.4
         overlay.control(.config(config))
+    }
+
+    @IBAction
+    func userTapHideKeyboardButton(_ sender: UIButton) {
+        view.endEditing(true)
     }
 }

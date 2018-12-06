@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OverlayExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JuliaLange" translatesAutoresizingMaskIntoConstraints="NO" id="FH8-cK-V1q">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="aOv-FZ-c0a">
-                                <rect key="frame" x="189" y="295" width="289" height="60"/>
+                                <rect key="frame" x="15.5" y="30" width="289" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZC-dx-4KL">
                                         <rect key="frame" x="0.0" y="15" width="60" height="30"/>
@@ -77,46 +77,59 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Ehb-JO-ysd">
+                                <rect key="frame" x="40.5" y="100" width="239" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Show Keyboard" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="feq-YI-ajK">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Loy-WA-t6k"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gD6-oP-ejF">
+                                        <rect key="frame" x="138" y="0.0" width="101" height="30"/>
+                                        <state key="normal" title="Hide Keyboard"/>
+                                        <connections>
+                                            <action selector="userTapHideKeyboardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qug-Ki-t08"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zp-3c-l5R">
-                                <rect key="frame" x="16" y="16" width="635" height="145"/>
+                                <rect key="frame" x="16" y="138" width="288" height="420"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="feq-YI-ajK">
-                                <rect key="frame" x="283.5" y="172" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Loy-WA-t6k"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="aOv-FZ-c0a" firstAttribute="top" secondItem="6zp-3c-l5R" secondAttribute="bottom" constant="134" id="11y-wv-ebn"/>
                             <constraint firstItem="6zp-3c-l5R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AnG-Gy-fh7"/>
-                            <constraint firstItem="6zp-3c-l5R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="F5f-KW-GkS"/>
+                            <constraint firstItem="Ehb-JO-ysd" firstAttribute="top" secondItem="aOv-FZ-c0a" secondAttribute="bottom" constant="10" id="BtD-mT-gFo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6zp-3c-l5R" secondAttribute="bottom" constant="10" id="FyY-Nt-jq4"/>
                             <constraint firstItem="aOv-FZ-c0a" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Lq3-v5-YDR"/>
+                            <constraint firstItem="6zp-3c-l5R" firstAttribute="top" secondItem="Ehb-JO-ysd" secondAttribute="bottom" constant="8" id="O4T-uQ-qUy"/>
                             <constraint firstAttribute="trailing" secondItem="FH8-cK-V1q" secondAttribute="trailing" id="P0T-u9-i31"/>
-                            <constraint firstItem="feq-YI-ajK" firstAttribute="centerX" secondItem="FH8-cK-V1q" secondAttribute="centerX" id="P2k-RZ-6lW"/>
-                            <constraint firstItem="feq-YI-ajK" firstAttribute="top" secondItem="6zp-3c-l5R" secondAttribute="bottom" constant="11" id="Rda-t8-j5k"/>
                             <constraint firstItem="FH8-cK-V1q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Rgb-wx-fKq"/>
                             <constraint firstItem="FH8-cK-V1q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SWQ-Vr-Usa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6zp-3c-l5R" secondAttribute="trailing" constant="16" id="Sm6-zB-TKH"/>
                             <constraint firstAttribute="bottom" secondItem="FH8-cK-V1q" secondAttribute="bottom" id="VUx-8L-PCY"/>
+                            <constraint firstItem="aOv-FZ-c0a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Vh7-fj-5ro"/>
+                            <constraint firstItem="Ehb-JO-ysd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dxM-Q1-nq8"/>
                             <constraint firstItem="aOv-FZ-c0a" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j7u-p0-fnP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aOv-FZ-c0a" secondAttribute="trailing" id="rrw-7K-BN7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aOv-FZ-c0a" secondAttribute="bottom" constant="20" id="w0P-Hl-wZ7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="containerView" destination="6zp-3c-l5R" id="uLn-rc-Kmu"/>
+                        <outlet property="containerViewBottomConstraint" destination="FyY-Nt-jq4" id="LT0-aU-l2K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="-60" y="-233.45070422535213"/>
         </scene>
     </scenes>
     <resources>
