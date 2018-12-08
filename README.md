@@ -36,7 +36,9 @@ Requirements
 -----------------
 - This is fully *Auto Layout* based. Manual layout scenario has not been considered.
 - Your overlay content view must have solveable minimum size.
-- Your overlay content view must be resizable. Dragging overlay can grow size, but not shrink.
+- Your overlay content view must be resizable. 
+  Dragging overlay can grow size, but not shrink.
+  If overlay content is too big for container, it will be shrunken to fit in the container.
 
 For your convenience, this controller checks for requirements and crashes with error message
 in debug build at treaceable location. You can check and solve any issues if required. Release build

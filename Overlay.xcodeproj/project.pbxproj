@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		45E86E1521B985F500E610D7 /* AutoLayoutUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E86E1421B985F500E610D7 /* AutoLayoutUtil.swift */; };
+		45E86E4E21BBB3B100E610D7 /* OverlayContentConfiguringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E86E4D21BBB3B100E610D7 /* OverlayContentConfiguringProtocol.swift */; };
 		45EBC8AD21B03AE100105925 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8AC21B03AE100105925 /* AnimationController.swift */; };
 		45EBC8AF21B03B0300105925 /* OBJCProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8AE21B03B0300105925 /* OBJCProxy.swift */; };
 		45EBC8B321B03D6200105925 /* ViewPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8B221B03D6200105925 /* ViewPair.swift */; };
@@ -15,9 +16,8 @@
 		45EBC8C021B04BA400105925 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8BF21B04BA400105925 /* Overlay.swift */; };
 		45EBC8C621B0502D00105925 /* ContentConstraintPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8B021B03C9000105925 /* ContentConstraintPalette.swift */; };
 		45EBC8C821B059D500105925 /* OnewayTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8C721B059D500105925 /* OnewayTransitionController.swift */; };
-		45EBC8CA21B059DF00105925 /* CrossTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8C921B059DF00105925 /* CrossTransitionController.swift */; };
 		45EBC8CC21B059E700105925 /* RunningContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8CB21B059E700105925 /* RunningContext.swift */; };
-		45EBC8D821B08D2400105925 /* CrossTransitionController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8D721B08D2400105925 /* CrossTransitionController2.swift */; };
+		45EBC8D821B08D2400105925 /* CrossTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8D721B08D2400105925 /* CrossTransitionController.swift */; };
 		45EBC8DA21B093DD00105925 /* FillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8D921B093DD00105925 /* FillViewController.swift */; };
 		45EBC8DF21B0ECA700105925 /* OverlayConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8DE21B0ECA700105925 /* OverlayConfig.swift */; };
 		45EBC8E121B0ECE000105925 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBC8E021B0ECE000105925 /* Protocols.swift */; };
@@ -41,6 +41,7 @@
 /* Begin PBXFileReference section */
 		4587424521B11AB100286894 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		45E86E1421B985F500E610D7 /* AutoLayoutUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutUtil.swift; sourceTree = "<group>"; };
+		45E86E4D21BBB3B100E610D7 /* OverlayContentConfiguringProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayContentConfiguringProtocol.swift; sourceTree = "<group>"; };
 		45EBC80F21B029B500105925 /* libOverlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOverlay.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EBC81921B029C100105925 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		45EBC8AC21B03AE100105925 /* AnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
@@ -50,9 +51,8 @@
 		45EBC8B421B03D8000105925 /* OverlayState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayState.swift; sourceTree = "<group>"; };
 		45EBC8BF21B04BA400105925 /* Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
 		45EBC8C721B059D500105925 /* OnewayTransitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnewayTransitionController.swift; sourceTree = "<group>"; };
-		45EBC8C921B059DF00105925 /* CrossTransitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossTransitionController.swift; sourceTree = "<group>"; };
 		45EBC8CB21B059E700105925 /* RunningContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningContext.swift; sourceTree = "<group>"; };
-		45EBC8D721B08D2400105925 /* CrossTransitionController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossTransitionController2.swift; sourceTree = "<group>"; };
+		45EBC8D721B08D2400105925 /* CrossTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossTransitionController.swift; sourceTree = "<group>"; };
 		45EBC8D921B093DD00105925 /* FillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillViewController.swift; sourceTree = "<group>"; };
 		45EBC8DE21B0ECA700105925 /* OverlayConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayConfig.swift; sourceTree = "<group>"; };
 		45EBC8E021B0ECE000105925 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
@@ -95,12 +95,12 @@
 			children = (
 				45EBC8BF21B04BA400105925 /* Overlay.swift */,
 				45EBC8DE21B0ECA700105925 /* OverlayConfig.swift */,
+				45E86E4D21BBB3B100E610D7 /* OverlayContentConfiguringProtocol.swift */,
 				45EBC8B421B03D8000105925 /* OverlayState.swift */,
 				45EBC8EE21B1072100105925 /* OverlayNote.swift */,
 				45EBC8E021B0ECE000105925 /* Protocols.swift */,
 				45EBC8C721B059D500105925 /* OnewayTransitionController.swift */,
-				45EBC8C921B059DF00105925 /* CrossTransitionController.swift */,
-				45EBC8D721B08D2400105925 /* CrossTransitionController2.swift */,
+				45EBC8D721B08D2400105925 /* CrossTransitionController.swift */,
 				45EBC8CB21B059E700105925 /* RunningContext.swift */,
 				45EBC8D921B093DD00105925 /* FillViewController.swift */,
 				45EBC8EC21B0FB2400105925 /* BackgroundFillingLayoutContext.swift */,
@@ -171,7 +171,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45EBC8CA21B059DF00105925 /* CrossTransitionController.swift in Sources */,
 				45EBC8CC21B059E700105925 /* RunningContext.swift in Sources */,
 				45E86E1521B985F500E610D7 /* AutoLayoutUtil.swift in Sources */,
 				45EBC8ED21B0FB2400105925 /* BackgroundFillingLayoutContext.swift in Sources */,
@@ -182,12 +181,13 @@
 				45EBC8EB21B0F62700105925 /* Debug.swift in Sources */,
 				45EBC8B521B03D8000105925 /* OverlayState.swift in Sources */,
 				45EBC8DF21B0ECA700105925 /* OverlayConfig.swift in Sources */,
-				45EBC8D821B08D2400105925 /* CrossTransitionController2.swift in Sources */,
+				45EBC8D821B08D2400105925 /* CrossTransitionController.swift in Sources */,
 				45EBC8AF21B03B0300105925 /* OBJCProxy.swift in Sources */,
 				45EBC8E121B0ECE000105925 /* Protocols.swift in Sources */,
 				45EBC8C021B04BA400105925 /* Overlay.swift in Sources */,
 				45EBC8C621B0502D00105925 /* ContentConstraintPalette.swift in Sources */,
 				45EBC8AD21B03AE100105925 /* AnimationController.swift in Sources */,
+				45E86E4E21BBB3B100E610D7 /* OverlayContentConfiguringProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

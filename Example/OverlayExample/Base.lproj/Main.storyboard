@@ -119,6 +119,7 @@
                             <constraint firstItem="Ehb-JO-ysd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dxM-Q1-nq8"/>
                             <constraint firstItem="aOv-FZ-c0a" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j7u-p0-fnP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aOv-FZ-c0a" secondAttribute="trailing" id="rrw-7K-BN7"/>
+                            <constraint firstItem="6zp-3c-l5R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="zY1-xC-Wcl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

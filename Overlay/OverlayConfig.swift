@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+///
+/// Provides declarative configuration of `Overlay`.
+///
 public struct OverlayConfig {
     public var onewayTransitionDuration = TimeInterval(0.4)
     
@@ -44,6 +47,8 @@ public struct OverlayConfig {
     /// If end-user dragged overlay content velocity is larger than this, dismiss note will be sent.
     public var draggingVelocityForDismission = CGFloat(1000)
     public var automaticallyDismissByEndUserInteraction = true
+
+//    public var contentTopInset = CGFloat(0)
 
     public init() {}
 }
