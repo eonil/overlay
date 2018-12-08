@@ -49,6 +49,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var containerView: UIView?
     @IBOutlet weak var containerViewBottomConstraint: NSLayoutConstraint?
+    @IBOutlet weak var textField: UITextField?
 
     @IBAction
     func userTapPresent1Button(_ sender: UIButton) {
@@ -56,6 +57,7 @@ class ViewController: UIViewController {
         s.container = containerView
         s.content = contentView1
         overlay.control(.render(s))
+        textField?.becomeFirstResponder()
     }
     @IBAction
     func userTapPresent2Button(_ sender: UIButton) {

@@ -60,6 +60,13 @@ final class OnewayTransitionController {
         fillViewController.preparePresentation()
         viewPair.container.addSubview(viewPair.content)
         contentConstraints.installConstraints(viewPair)
+        viewPair.container.layoutIfNeeded()
+        // This must be layout separately after all other layout
+        // finished. There're some corner cases that requires this.
+        // - If content-view becomes first responder in this method,
+        //   it can cause keyboard animation, and so extra animations too.
+        //   If there's an extra animations intended, above layout
+        //   must be done to start animation from correct positions.
         (viewPair.content as? TransitionProtocol)?.preparePresentation()
         viewPair.container.layoutIfNeeded()
     }
@@ -68,6 +75,8 @@ final class OnewayTransitionController {
         let fctx = contentConstraints.fillingContext(displacement: 0)
         fillViewController.layoutPresentation(context: fctx)
         contentConstraints.bottom?.constant = 0
+        viewPair.container.layoutIfNeeded()
+        // This must be layout separately same reason with preparing.
         (viewPair.content as? TransitionProtocol)?.layoutPresentation()
         viewPair.container.layoutIfNeeded()
     }
@@ -79,6 +88,7 @@ final class OnewayTransitionController {
 
     private func prepareDismission() {
         fillViewController.prepareDismission()
+        viewPair.container.layoutIfNeeded()
         (viewPair.content as? TransitionProtocol)?.prepareDismission()
         viewPair.container.layoutIfNeeded()
     }
@@ -88,6 +98,7 @@ final class OnewayTransitionController {
         contentConstraints.bottom?.constant = displacement
         let fctx = contentConstraints.fillingContext(displacement: displacement)
         fillViewController.layoutDismission(context: fctx)
+        viewPair.container.layoutIfNeeded()
         (viewPair.content as? TransitionProtocol)?.layoutDismission()
         viewPair.container.layoutIfNeeded()
     }

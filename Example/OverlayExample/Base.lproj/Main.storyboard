@@ -125,6 +125,7 @@
                     <connections>
                         <outlet property="containerView" destination="6zp-3c-l5R" id="uLn-rc-Kmu"/>
                         <outlet property="containerViewBottomConstraint" destination="FyY-Nt-jq4" id="LT0-aU-l2K"/>
+                        <outlet property="textField" destination="feq-YI-ajK" id="0sp-sy-Ppj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
